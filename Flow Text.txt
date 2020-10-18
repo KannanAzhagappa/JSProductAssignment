@@ -17,3 +17,6 @@ This is only applicable for products which are available for sales (The buy butt
 For products which are not available for sales, the buy button will be disabled with a disclaimer text.
 9) In addition to this, the user can resize the screen and change view from horizontal section selection to vertical section selection.
 And please note that there will be an alert message displayed at too small screens.
+
+Note: From backend, the JSON files for both product and currency list are loaded via AJAX request call upon load of the page.
+And the data are stored and retrieved from local storage in realtime for the UI interaction performance purposes.
