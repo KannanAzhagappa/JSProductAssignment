@@ -106,6 +106,7 @@ function calculate() {
             } else {
                 document.getElementById('ccy-container').style.display = "block";
                 if (currencies[key][j].currency_ISO == ccyele.options[ccyele.selectedIndex].text) {
+                    document.getElementById('convertccy').value = currencies[key][j].currency;
                     document.getElementById('convertrate').value = currencies[key][j].rate.toFixed(2).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");;
                     document.getElementById('convertedprice').value = convertcurrencydata(product_object.productPrice.toFixed(2), currencies[key][j].rate.toFixed(2));
                     resetcheck = true;
@@ -113,7 +114,7 @@ function calculate() {
                 }
             }
         }
-    });                                          
+    });
 }
 
 function mysales() {
@@ -123,6 +124,6 @@ function mysales() {
 }
 
 function reset() {
-    document.getElementById('currencyoption').selectedIndex = 0;   
+    document.getElementById('currencyoption').selectedIndex = 0;
     document.getElementById('ccy-container').style.display = "none";
 }

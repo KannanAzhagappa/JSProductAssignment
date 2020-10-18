@@ -83,6 +83,8 @@
           </select><br>
         </div>
         <div id="ccy-container" class="group" style="display: none">
+          <label>Selected Currency:</label><br>
+          <input type="text" id="convertccy" name="convertccy" readonly><br>
           <label>Exchange Rate:</label><br>
           <input type="text" id="convertrate" name="convertrate" readonly><br>
           <label>Converted price:</label><br>
@@ -109,7 +111,7 @@
       if (width <= 300) {
         alert(
           "The screen size is too small to display the web content!!!! Please re-size the window to a bigger screen size."
-          );
+        );
       }
     }
     window.addEventListener("resize", function () {

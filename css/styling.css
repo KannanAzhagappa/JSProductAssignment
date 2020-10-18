@@ -15,7 +15,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
@@ -86,7 +86,7 @@ li {
   color: white;
 }
 
-.title-container > h1 {
+.title-container>h1 {
   border: 2px solid white;
   border-radius: 10px;
   position: relative;
@@ -106,7 +106,7 @@ h1 span {
   position: relative;
 }
 
-.title-container > h2 {
+.title-container>h2 {
   text-align: left;
   letter-spacing: 2px;
   font-size: 30px;
@@ -250,7 +250,7 @@ h1 span {
   transition: all ease 0.2s;
 }
 
-#progressbar-container li:hover:after, 
+#progressbar-container li:hover:after,
 #progressbar-container li:active:after {
   color: deepskyblue;
 }
@@ -280,7 +280,7 @@ h1 span {
   transition: all ease 0.9s;
 }
 
-.section-image > img {
+.section-image>img {
   width: 50px;
   height: 50px;
 }
@@ -444,13 +444,13 @@ td {
   height: 45px !important;
 }
 
-.footer-image2 > p {
+.footer-image2>p {
   margin-top: -5px;
   margin-left: 5px;
   float: left;
 }
 
-.footer-image2-email > p {
+.footer-image2-email>p {
   margin-top: -5px;
   margin-left: 10px;
   float: left;
@@ -476,7 +476,7 @@ td {
   text-align: justify;
 }
 
-.skills > h3 {
+.skills>h3 {
   margin-top: 30px;
   margin-left: 40px;
   text-decoration: underline;
@@ -618,12 +618,13 @@ td {
 
 @media screen and (max-width: 550px) {
   table {
-    table-layout:fixed !important;
+    table-layout: fixed !important;
     word-break: break-all !important;
   }
 
-  th, td {
-    table-layout:fixed !important;
+  th,
+  td {
+    table-layout: fixed !important;
     word-break: break-all !important;
   }
 
@@ -634,10 +635,21 @@ td {
 
 /* The animation code for the first assignment */
 @keyframes colorchange {
-  0%   {color: red;}
-  25%  {color: yellow;}
-  50%  {color: blue;}
-  100% {color: green;}
+  0% {
+    color: red;
+  }
+
+  25% {
+    color: yellow;
+  }
+
+  50% {
+    color: blue;
+  }
+
+  100% {
+    color: green;
+  }
 }
 
 /* Class selector to apply the animation */
