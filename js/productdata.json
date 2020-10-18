@@ -1,0 +1,31 @@
+{
+    "products": [
+        {
+            "productID": "SG001",
+            "productName": "Car",
+            "productPrice":  250000, 
+            "productcategory": "Vehicle",
+            "productimage": "../images/car.jpg",
+            "productimagetext": "Car Product's Picture",
+            "productsalecode": true
+        },
+        {
+            "productID": "SG002",
+            "productName": "Sofa",
+            "productPrice":  2500, 
+            "productcategory": "Furniture",
+            "productimage": "../images/sofa.jpg",
+            "productimagetext": "Sofa Product's Picture",
+            "productsalecode": true
+        },
+        {
+            "productID": "SG003",
+            "productName": "House",
+            "productPrice":  300000, 
+            "productcategory": "Accomodation",
+            "productimage": "../images/house.jpg",
+            "productimagetext": "House Product's Picture",
+            "productsalecode": false
+        }
+    ]
+}

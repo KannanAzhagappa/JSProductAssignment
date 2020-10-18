@@ -1,0 +1,328 @@
+{
+    "currencies": [
+        {
+            "currency": "Singapore Dollar",
+            "currency_ISO": "SGD",
+            "basecurrency": true,
+            "rate": 1
+        },
+        {
+            "currency": "Argentine Peso",
+            "currency_ISO": "ARS",
+            "basecurrency": false,
+            "rate": 57.01734
+        },
+        {
+            "currency": "Australian Dollar",
+            "currency_ISO": "AUD",
+            "basecurrency": false,
+            "rate": 1.039505
+        },
+        {
+            "currency": "Bahraini Dinar",
+            "currency_ISO": "BHD",
+            "basecurrency": false,
+            "rate": 0.276706
+        },
+        {
+            "currency": "Botswana Pula",
+            "currency_ISO": "BWP",
+            "basecurrency": false,
+            "rate": 8.454941
+        },
+        {
+            "currency": "Brazilian Real",
+            "currency_ISO": "BRL",
+            "basecurrency": false,
+            "rate": 4.15575
+        },
+        {
+            "currency": "British Pound",
+            "currency_ISO": "GBP",
+            "basecurrency": false,
+            "rate": 0.569782
+        },
+        {
+            "currency": "Bruneian Dollar",
+            "currency_ISO": "BND",
+            "basecurrency": false,
+            "rate": 1
+        },
+        {
+            "currency": "Bulgarian Lev",
+            "currency_ISO": "BGN",
+            "basecurrency": false,
+            "rate": 1.228443
+        },
+        {
+            "currency": "Canadian Dollar",
+            "currency_ISO": "CAD",
+            "basecurrency": false,
+            "rate": 0.970643
+        },
+        {
+            "currency": "Chilean Peso",
+            "currency_ISO": "CLP",
+            "basecurrency": false,
+            "rate": 583.949906
+        },
+        {
+            "currency": "Chinese Yuan Renminbi",
+            "currency_ISO": "CNY",
+            "basecurrency": false,
+            "rate": 4.928911
+        },
+        {
+            "currency": "Colombian Peso",
+            "currency_ISO": "COP",
+            "basecurrency": false,
+            "rate": 2831.607976
+        },
+        {
+            "currency": "Croatian Kuna",
+            "currency_ISO": "HRK",
+            "basecurrency": false,
+            "rate": 4.762444
+        },
+        {
+            "currency": "Czech Koruna",
+            "currency_ISO": "CZK",
+            "basecurrency": false,
+            "rate": 17.131028
+        },
+        {
+            "currency": "Danish Krone",
+            "currency_ISO": "DKK",
+            "basecurrency": false,
+            "rate": 4.67436
+        },
+        {
+            "currency": "Emirati Dirham",
+            "currency_ISO": "AED",
+            "basecurrency": false,
+            "rate": 2.70267
+        },
+        {
+            "currency": "Euro",
+            "currency_ISO": "EUR",
+            "basecurrency": false,
+            "rate": 0.628093
+        },
+        {
+            "currency": "Hong Kong Dollar",
+            "currency_ISO": "HKD",
+            "basecurrency": false,
+            "rate": 5.703607
+        },
+        {
+            "currency": "Hungarian Forint",
+            "currency_ISO": "HUF",
+            "basecurrency": false,
+            "rate": 228.881113
+        },
+        {
+            "currency": "Icelandic Krona",
+            "currency_ISO": "ISK",
+            "basecurrency": false,
+            "rate": 102.485287
+        },
+        {
+            "currency": "Indian Rupee",
+            "currency_ISO": "INR",
+            "basecurrency": false,
+            "rate": 54.047669
+        },
+        {
+            "currency": "Indonesian Rupiah",
+            "currency_ISO": "IDR",
+            "basecurrency": false,
+            "rate": 10868.826239
+        },
+        {
+            "currency": "Iranian Rial",
+            "currency_ISO": "IRR",
+            "basecurrency": false,
+            "rate": 30927.29222
+        },
+        {
+            "currency": "Israeli Shekel",
+            "currency_ISO": "ILS",
+            "basecurrency": false,
+            "rate": 2.486305
+        },
+        {
+            "currency": "Japanese Yen",
+            "currency_ISO": "JPY",
+            "basecurrency": false,
+            "rate": 77.566109
+        },
+        {
+            "currency": "Kazakhstani Tenge",
+            "currency_ISO": "KZT",
+            "basecurrency": false,
+            "rate": 315.734742
+        },
+        {
+            "currency": "Kuwaiti Dinar",
+            "currency_ISO": "KWD",
+            "basecurrency": false,
+            "rate": 0.225216
+        },
+        {
+            "currency": "Libyan Dinar",
+            "currency_ISO": "LYD",
+            "basecurrency": false,
+            "rate": 1.005004
+        },
+        {
+            "currency": "Malaysian Ringgit",
+            "currency_ISO": "MYR",
+            "basecurrency": false,
+            "rate": 3.054366
+        },
+        {
+            "currency": "Mauritian Rupee",
+            "currency_ISO": "MUR",
+            "basecurrency": false,
+            "rate": 29.308117
+        },
+        {
+            "currency": "Mexican Peso",
+            "currency_ISO": "MXN",
+            "basecurrency": false,
+            "rate": 15.559813
+        },
+        {
+            "currency": "Nepalese Rupee",
+            "currency_ISO": "NPR",
+            "basecurrency": false,
+            "rate": 86.881628
+        },
+        {
+            "currency": "New Zealand Dollar",
+            "currency_ISO": "NZD",
+            "basecurrency": false,
+            "rate": 1.114109
+        },
+        {
+            "currency": "Norwegian Krone",
+            "currency_ISO": "NOK",
+            "basecurrency": false,
+            "rate": 6.904445
+        },
+        {
+            "currency": "Omani Rial",
+            "currency_ISO": "OMR",
+            "basecurrency": false,
+            "rate": 0.282962
+        },
+        {
+            "currency": "Pakistani Rupee",
+            "currency_ISO": "PKR",
+            "basecurrency": false,
+            "rate": 119.818658
+        },
+        {
+            "currency": "Philippine Peso",
+            "currency_ISO": "PHP",
+            "basecurrency": false,
+            "rate": 35.817862
+        },
+        {
+            "currency": "Polish Zloty",
+            "currency_ISO": "PLN",
+            "basecurrency": false,
+            "rate": 2.856167
+        },
+        {
+            "currency": "Qatari Riyal",
+            "currency_ISO": "QAR",
+            "basecurrency": false,
+            "rate": 2.678753
+        },
+        {
+            "currency": "Romanian New Leu",
+            "currency_ISO": "RON",
+            "basecurrency": false,
+            "rate": 3.062483
+        },
+        {
+            "currency": "Russian Ruble",
+            "currency_ISO": "RUB",
+            "basecurrency": false,
+            "rate": 57.344506
+        },
+        {
+            "currency": "Saudi Arabian Riyal",
+            "currency_ISO": "SAR",
+            "basecurrency": false,
+            "rate": 2.759704
+        },
+        {
+            "currency": "South African Rand",
+            "currency_ISO": "ZAR",
+            "basecurrency": false,
+            "rate": 12.176543
+        },
+        {
+            "currency": "South Korean Won",
+            "currency_ISO": "KRW",
+            "basecurrency": false,
+            "rate": 840.58894
+        },
+        {
+            "currency": "Sri Lankan Rupee",
+            "currency_ISO": "LKR",
+            "basecurrency": false,
+            "rate": 135.76473
+        },
+        {
+            "currency": "Swedish Krona",
+            "currency_ISO": "SEK",
+            "basecurrency": false,
+            "rate": 6.519971
+        },
+        {
+            "currency": "Swiss Franc",
+            "currency_ISO": "CHF",
+            "basecurrency": false,
+            "rate": 0.67313
+        },
+        {
+            "currency": "Taiwan New Dollar",
+            "currency_ISO": "TWD",
+            "basecurrency": false,
+            "rate": 21.180085
+        },
+        {
+            "currency": "Thai Baht",
+            "currency_ISO": "THB",
+            "basecurrency": false,
+            "rate": 22.963415
+        },
+        {
+            "currency": "Trinidadian Dollar",
+            "currency_ISO": "TTD",
+            "basecurrency": false,
+            "rate": 4.989309
+        },
+        {
+            "currency": "Turkish Lira",
+            "currency_ISO": "TRY",
+            "basecurrency": false,
+            "rate": 5.841573
+        },
+        {
+            "currency": "US Dollar",
+            "currency_ISO": "USD",
+            "basecurrency": false,
+            "rate": 0.735921
+        },
+        {
+            "currency": "Venezuelan Bolivar",
+            "currency_ISO": "VES",
+            "basecurrency": false,
+            "rate": 7.350012
+        }
+    ]
+}

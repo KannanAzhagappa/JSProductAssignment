@@ -1,0 +1,648 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.6;
+  min-width: 0;
+  font-family: tahoma;
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/photographer.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.grid-container {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  column-gap: 2px;
+  row-gap: 20px;
+  text-align: center;
+}
+
+
+.grid {
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.grid-item-top {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 50px;
+}
+
+.grid-item-side {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  font-size: 18px;
+  background: rgba(250, 241, 241, 0.9);
+  border-radius: 50px;
+}
+
+.section-wrapper {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  float: left;
+}
+
+.grid-item-bottom {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  background: rgba(250, 241, 241, 0.9);
+  font-size: 18px;
+  border-radius: 50px;
+}
+
+.title-container {
+  float: top;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 23px;
+  color: white;
+}
+
+.title-container > h1 {
+  border: 2px solid white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.name-container {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 3px;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 0 20px 0 20px;
+}
+
+h1 span {
+  color: deepskyblue;
+  position: relative;
+}
+
+.title-container > h2 {
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: 30px;
+  text-transform: none;
+  position: relative;
+}
+
+.txt-rotate {
+  letter-spacing: 2px;
+  font-size: 30px;
+  text-transform: none;
+  color: deepskyblue;
+}
+
+.image-container {
+  float: left;
+  vertical-align: top;
+}
+
+.image-rounded {
+  width: 175px;
+  height: 175px;
+  margin-top: 0;
+  border-radius: 50%;
+}
+
+.image-rounded:hover {
+  transform: scale(1.1);
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+
+.side-item-inner {
+  margin-top: 10px;
+  color: deepskyblue;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.side-description {
+  padding: 10px;
+  overflow-wrap: normal;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 200;
+  color: #000066;
+  letter-spacing: 2px;
+  text-transform: none;
+}
+
+.side-description-items {
+  text-align: left;
+  padding: 5px;
+}
+
+.side-description-items a {
+  display: block;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+.side-description-items a:hover {
+  color: deepskyblue;
+  background-color: white;
+}
+
+#progressbar-container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 100px;
+  margin-top: 59px;
+}
+
+#progressbar-container ul {
+  padding: 0;
+  margin: 0;
+  padding-top: 15px;
+  z-index: 9999;
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+}
+
+#progressbar-container li:before {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 2px #aaa;
+  transition: all ease 0.3s;
+}
+
+#progressbar-container li.active:before,
+#progressbar-container li:hover:before {
+  background: deepskyblue;
+}
+
+#progressbar-container li {
+  float: left;
+  width: 20%;
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all ease 0.2s;
+  vertical-align: bottom;
+  height: 59px;
+  position: relative;
+}
+
+#progressbar-container li .section-title-inner {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 14px;
+}
+
+#progressbar-container li.active,
+#progressbar-container li:hover {
+  color: deepskyblue;
+}
+
+#progressbar-container li:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #777;
+  margin: auto;
+  border: solid 7px white;
+  border-radius: 50%;
+  margin-top: 40px;
+  box-shadow: 0 2px 13px -1px rgba(0, 0, 0, 0.3);
+  transition: all ease 0.2s;
+}
+
+#progressbar-container li:hover:after, 
+#progressbar-container li:active:after {
+  color: deepskyblue;
+}
+
+#progressbar-container #line {
+  width: 80%;
+  margin: auto;
+  background: #eee;
+  height: 5px;
+  position: absolute;
+  left: 10%;
+  top: 57px;
+  z-index: 1;
+  border-radius: 50px;
+  transition: all ease 0.9s;
+}
+
+#progressbar-container #line-process {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: deepskyblue;
+  background: linear-gradient(to right, deepskyblue 0%, #2ea3b7 100%);
+  position: absolute;
+  z-index: 2;
+  border-radius: 50px;
+  transition: all ease 0.9s;
+}
+
+.section-image > img {
+  width: 50px;
+  height: 50px;
+}
+
+#progress-content-section {
+  width: 90%;
+  margin: auto;
+  background: rgba(250, 241, 241, 0.9);
+  border-radius: 50px;
+}
+
+#progress-content-section .section-content {
+  padding: 30px 40px;
+}
+
+#progress-content-section .section-content h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+#progress-content-section .section-content p {
+  font-size: 16px;
+  line-height: 2.6em;
+  color: #777;
+  text-align: justify;
+}
+
+#progress-content-section .section-content {
+  display: none;
+  animation: FadeInUp 700ms ease 1;
+  animation-fill-mode: forwards;
+  transform: translateY(15px);
+  opacity: 0;
+}
+
+#progress-content-section .section-content.active {
+  display: block;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: left;
+  border-spacing: 2px;
+  background-color: deepskyblue;
+  color: white;
+}
+
+td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: left;
+  border-spacing: 2px;
+}
+
+.zebrastyletable tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.zebrastyletable tr:nth-child(odd) {
+  background-color: lightyellow;
+}
+
+.zebrastyletable tr:hover {
+  background-color: lightcyan;
+}
+
+.download {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 3px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  background-color: #b22222;
+}
+
+.download a {
+  color: white !important;
+}
+
+.footer-content h4 {
+  margin-top: 30px;
+  margin-left: 20px;
+  float: left;
+  text-align: left;
+}
+
+.footer-container h5 {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  float: none;
+  text-align: left;
+}
+
+.footer-container h6 {
+  margin-left: 20px;
+  float: none;
+}
+
+.link-top {
+  float: right;
+  margin-top: 10px;
+  margin-right: 50px;
+  color: white;
+}
+
+.link-top a {
+  color: white;
+}
+
+.link-top img {
+  width: 40px;
+  height: 40px;
+}
+
+.link-top img:hover {
+  transform: scale(1.4);
+}
+
+.footer-image1 {
+  float: left;
+  text-align: left;
+}
+
+.footer-image2 {
+  float: none;
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.footer-image1 img {
+  margin-left: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  min-width: 0;
+}
+
+.footer-image2 img {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  min-width: 0;
+  display: block;
+  float: left;
+}
+
+.fb {
+  width: 45px !important;
+  height: 45px !important;
+}
+
+.footer-image2 > p {
+  margin-top: -5px;
+  margin-left: 5px;
+  float: left;
+}
+
+.footer-image2-email > p {
+  margin-top: -5px;
+  margin-left: 10px;
+  float: left;
+}
+
+.footer-image2-email {
+  float: none;
+  text-align: left;
+  margin-left: 5px;
+  margin-top: 20px !important;
+}
+
+.footer-image2-email img {
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+  min-width: 0;
+  display: block;
+  float: left;
+}
+
+.skills {
+  text-align: justify;
+}
+
+.skills > h3 {
+  margin-top: 30px;
+  margin-left: 40px;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+.skills li {
+  margin-top: 30px;
+}
+
+.bar {
+  background: #353b48;
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 2px #2187e7b3;
+  box-sizing: content-box;
+}
+
+.bar span {
+  height: 2px;
+  float: left;
+  background: #2187e7;
+}
+
+.html {
+  width: 90%;
+  animation: html 2s;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+.css {
+  width: 70%;
+  animation: css 2s;
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+.javascript {
+  width: 70%;
+  animation: javascript 2s;
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+.microsoft {
+  width: 90%;
+  animation: microsoft 2s;
+}
+
+@keyframes microsoft {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+.vba {
+  width: 90%;
+  animation: vba 2s;
+}
+
+@keyframes vba {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes FadeInUp {
+  0% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-title-inner {
+    font-size: 80% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .image-container {
+    float: none !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  table {
+    table-layout:fixed !important;
+    word-break: break-all !important;
+  }
+
+  th, td {
+    table-layout:fixed !important;
+    word-break: break-all !important;
+  }
+
+  * {
+    scroll-snap-stop: always !important;
+  }
+}
+
+/* The animation code for the first assignment */
+@keyframes colorchange {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+
+/* Class selector to apply the animation */
+.animate {
+  animation-name: colorchange;
+  animation-duration: 10s;
+  animation-delay: 1s;
+}

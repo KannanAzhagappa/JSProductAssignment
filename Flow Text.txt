@@ -1,0 +1,19 @@
+Thought process from a user presepctive:
+
+1) Open the product catalog from the main portfolio page
+2) The product catalog page will be shown
+3) The user will be shown a drop down with all the products available for sales (This is populated by JSON file from backend)
+4) Once the user selects the product, we will have four sections to choose from:
+ - Product Details
+ - Product Category
+ - Pricing Info
+ - Buy Options (If applicable)
+5) For Product details, It is a information view about the product and its price in base currency (SGD)
+6) For product category, it shows the user how the description of the product varies based on their selection of the product from the dropdown
+7) For Pricing Info, the user will have a currency conversion option (54 currencies to choose from) and once selected, a new information with the converted price & the corresponding rate shown.
+The user will have a option to change other currencies or can also reset the selected currency by clicking on reset button. Upon reset, only selection option for conversion will be available.
+8) Once the user have selected the currency conversions, the user can choose to show interest in purchase. Upon clicking the button, the thank message will be shown 
+This is only applicable for products which are available for sales (The buy button will be enabled).
+For products which are not available for sales, the buy button will be disabled with a disclaimer text.
+9) In addition to this, the user can resize the screen and change view from horizontal section selection to vertical section selection.
+And please note that there will be an alert message displayed at too small screens.

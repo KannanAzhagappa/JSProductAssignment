@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kannan Azhagappa's Products Page">
+  <meta name="keywords" content="JSON, Product List, Currencies, Conversion, Rates, Sales, Catalog">
+  <meta name="author" content="Kannan Azhagappa">
+  <title>Product Catalogue</title>
+  <link rel="stylesheet" href="../css/jsassignmentstyling.css">
+</head>
+
+<body>
+  <h1>Product List</h1>
+  <div class="selectWrapper">
+    <select class="selectBox" id="productoption" onclick="display()">
+      <option>---Select Product---</option>
+    </select>
+  </div>
+  <br><br>
+  <div class="tabbed" id="main-container" style="display: none">
+    <ul>
+      <li>
+        <a href="#section1">Product Details</a>
+      </li>
+      <li>
+        <a href="#section2">Product Category</a>
+      </li>
+      <li>
+        <a href="#section3">Pricing Info</a>
+      </li>
+      <li>
+        <a href="#section4">Buy!</a>
+      </li>
+    </ul>
+    <div id="container">
+      <section id="section1">
+        <div class="image-container"><img id="product-image" class="image-rounded"></div>
+        <br>
+        <div class="item-container">
+          <div class="group">
+            <label>Product ID:</label>
+            <input type="text" id="productid" name="ProductID" readonly>
+          </div>
+          <div class="group">
+            <label>Product Name:</label>
+            <input type="text" id="productname" name="ProductName" readonly>
+          </div>
+          <div class="group">
+            <label>Product Category:</label>
+            <input type="text" id="productcategory" name="ProductCategory" readonly>
+          </div>
+          <div class="group">
+            <label>Product Price (SGD):</label>
+            <input type="text" id="productprice" name="ProductPrice" readonly>
+          </div>
+        </div>
+      </section>
+      <section id="section2">
+        <div class="group">
+          <label>Product Category:</label>
+          <input type="text" id="productcategory1" name="ProductCategory" readonly>
+        </div>
+        <div class="group">
+          <label>Product Description:</label><br>
+          <textarea id="productcategorydesc" name="ProductCategorydesc" class="text-input" readonly></textarea>
+        </div>
+      </section>
+      <section id="section3">
+        <div class="group">
+          <label>Base Currency:</label><br>
+          <input type="text" id="basecurrency" name="basecurrency" value="SGD" readonly>
+        </div>
+        <div class="group">
+          <label>Price in Base Currency:</label><br>
+          <input type="text" id="productpricebaseccy" name="productpricebaseccy" readonly>
+        </div>
+        <div class="group">
+          <label>Currency to convert:</label><br>
+          <select class="selectBox_2" id="currencyoption" onclick="calculate()">
+            <option>---Select Currency---</option>
+          </select><br>
+        </div>
+        <div id="ccy-container" class="group" style="display: none">
+          <label>Exchange Rate:</label><br>
+          <input type="text" id="convertrate" name="convertrate" readonly><br>
+          <label>Converted price:</label><br>
+          <input type="text" id="convertedprice" name="convertedprice" readonly>
+          <button id="reset" onclick="reset()">Reset Currency</button>
+        </div>
+      </section>
+      <section id="section4">
+        <div id="sale-container" style="display: none">
+          <label for="saledescription" id="saledescriptionlabel">Sale Description:</label><br>
+          <textarea id="saledescription" name="saledescription" class="text-input" readonly></textarea>
+        </div>
+        <button class="sale-button" id="sale-button" onclick="mysales()">Buy!</button>
+      </section>
+    </div>
+  </div>
+  <script src="../js/script.js"></script>
+  <script src="../js/datascript.js"></script>
+  <script>
+    var timeOutFunctionId;
+
+    function workAfterResizeIsDone() {
+      var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      if (width <= 300) {
+        alert(
+          "The screen size is too small to display the web content!!!! Please re-size the window to a bigger screen size."
+          );
+      }
+    }
+    window.addEventListener("resize", function () {
+      clearTimeout(timeOutFunctionId);
+      timeOutFunctionId = setTimeout(workAfterResizeIsDone, 100);
+    });
+  </script>
+</body>
+
+</html>
